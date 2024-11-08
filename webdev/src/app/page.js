@@ -4,10 +4,16 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <div className={styles.page}>
+      <div className={styles.buttons}>
+        <div className={styles.button}>Fitness Centers</div>
+        <div className={styles.button}>Dining Halls</div>
+        <div className={styles.button}>Club Spaces</div>
+      </div>
       <main className={styles.main}>
-        <div className="main">
-          <ol style={{ fontSize: "4rem" }}>Cornell Web Dev !!!</ol>
+        <div>
+          <ol style={{ fontSize: "4rem" }}>Cornell RoomFinder</ol>
         </div>
+        <p style={{ marginTop: "20px" }}>Check for room availability now</p>
       </main>
       <footer className={styles.footer}>
         <a
