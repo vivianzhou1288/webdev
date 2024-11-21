@@ -6,13 +6,11 @@
   --button-primary-hover: #383838;
   --button-secondary-hover: #f2f2f2;
 
-  display: grid;
-  grid-template-rows: 20px 1fr 20px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-items: center;
   min-height: 100svh;
-  padding: 80px;
-  gap: 64px;
   font-family: var(--font-geist-sans);
 }
 
@@ -25,6 +23,32 @@
     --button-primary-hover: #ccc;
     --button-secondary-hover: #1a1a1a;
   }
+}
+
+.navbar {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  width: 100%;
+  top: 0px;
+  text-align: center;
+  padding: 20px;
+  background: #B31B1B;
+}
+
+.carousel{
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0,0,0, .1);
+  font-size: 5rem;
+  width: 100%;
+  margin-top: 0px;
+  /* height: 50vh; */
+  padding: 100px 50px;
+  /* position: relative;
+  top: -50px; */
 }
 
 .buttons {
@@ -48,9 +72,9 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-  grid-row-start: 2;
   justify-content: center;
   align-items: center;
+  padding: 50px;
 }
 
 .main ol {
@@ -109,7 +133,6 @@ a.secondary {
 }
 
 .footer {
-  grid-row-start: 3;
   display: flex;
   gap: 24px;
 }
@@ -144,16 +167,11 @@ a.secondary {
 
 @media (max-width: 600px) {
   .page {
-    padding: 32px;
     padding-bottom: 80px;
   }
 
   .main {
     align-items: center;
-  }
-
-  .main ol {
-    text-align: center;
   }
 
   .ctas {

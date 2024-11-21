@@ -4,16 +4,39 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <div className={styles.page}>
-      <div className={styles.buttons}>
-        <div className={styles.button}>Fitness Centers</div>
-        <div className={styles.button}>Dining Halls</div>
-        <div className={styles.button}>Club Spaces</div>
+      <div className={styles.navbar}>
+        Navigation Bar - CU Supplies
+        <input
+          style={{
+            width: "50%",
+            marginLeft: "5%",
+            marginRight: "5%",
+            borderRadius: "10px",
+            backgroundColor: "white",
+            height: "30px",
+          }}
+        ></input>
+        <div
+          style={{
+            marginRight: "5%",
+          }}
+        >
+          Name
+        </div>
+        <div
+          style={{
+            marginRight: "5%",
+          }}
+        >
+          Cart
+        </div>
+      </div>
+      <div className={styles.carousel}>
+        <div>Need school supplies? Shop now!</div>
+        <div> big picture of school supplies here</div>
       </div>
       <main className={styles.main}>
-        <div>
-          <ol style={{ fontSize: "4rem" }}>Cornell RoomFinder</ol>
-        </div>
-        <p style={{ marginTop: "20px" }}>Check for room availability now</p>
+        Fill this up with some default product pictures
       </main>
       <footer className={styles.footer}>
         <a
