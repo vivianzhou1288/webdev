@@ -200,3 +200,22 @@ a.secondary {
     filter: invert();
   }
 }
+
+/* Fitness page */
+.fitnesspage {
+  font-family: var(--font-geist-sans);
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+.centers {
+  display: flex;
+  flex-direction: "row";
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.fitnessCenter {
+  text-align: center;
+  width: 120px;
+}

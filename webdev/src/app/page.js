@@ -1,9 +1,13 @@
+"use client";
 import Image from "next/image";
 import styles from "./page.module.css";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
   return (
     <div className={styles.page}>
+<<<<<<< Updated upstream
       <div className={styles.navbar}>
         Navigation Bar - CU Supplies
         <input
@@ -34,6 +38,19 @@ export default function Home() {
       <div className={styles.carousel}>
         <div>Need school supplies? Shop now!</div>
         <div> big picture of school supplies here</div>
+=======
+      <div className={styles.buttons}>
+        <div
+          className={styles.button}
+          onClick={() => {
+            router.push("/fitness");
+          }}
+        >
+          Fitness Centers
+        </div>
+        <div className={styles.button}>Dining Halls</div>
+        <div className={styles.button}>Club Spaces</div>
+>>>>>>> Stashed changes
       </div>
       <main className={styles.main}>
         Fill this up with some default product pictures
